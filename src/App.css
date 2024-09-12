@@ -1,0 +1,46 @@
+body {
+  background-color: #e0e0e0;
+  color: black;
+}
+body.synthwave {
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+}
+.theme-controller {
+  display: none;
+}
+
+/* Style the swap label and icons */
+.swap {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.swap-rotate {
+  transform: rotate(0);
+  transition: transform 0.2s;
+}
+
+.swap input:checked ~ .swap-on {
+  display: block;
+}
+
+.swap input:checked ~ .swap-off {
+  display: none;
+}
+
+.swap .swap-on {
+  display: none;
+}
+
+.swap .swap-off {
+  display: block;
+}
+
+
+/* @layer utilities {
+.text-balance {
+  text-wrap: balance;
+}
+} */
